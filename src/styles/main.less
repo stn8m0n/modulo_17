@@ -1,4 +1,4 @@
-@import "variaveis.less";
+@import "mapas.less";
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width:768px) and (max-width:1023px)";
 
@@ -14,8 +14,8 @@
 }
 
 body{
-    background-color: @corDeFundo;
-    color: @corDosTextos;
+    background-color: #colors [backgroundColor];
+    color: #colors [textColor];
 }
 
 .container{
@@ -25,12 +25,10 @@ body{
 
     @media @breakpointMobile {
         max-width: 70%;
-        background-color: red;
     }
 
     @media @breakpointTablet{
         max-width: 80%;
-        background-color: yellow;
     }
     
 }
@@ -61,5 +59,23 @@ header{
     &-description{
         font-size: 14px;
         opacity: 0,7;
+    }
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+
+    li{
+        list-style: none;
+        img {
+            transition: all ease 0.3s;
+            &:hover{
+                transform: scale(1.3);
+            }
+        }
     }
 }
