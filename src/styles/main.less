@@ -38,7 +38,6 @@ li {
     @media @breakpointTablet{
         max-width: 80%;
     }
-    
 }
 
 header{
@@ -48,8 +47,10 @@ header{
         display: block;
         margin: 0 auto 24px;
         border-radius: 100px;
+        width: 200px; /* Adicionando a largura desejada */
+        height: 200px; /* Adicionando a altura desejada */
+        object-fit: cover; /* Para garantir que a imagem se ajuste ao espaço de 200x200px sem distorção */
     }
-}
 
 .profile-bio{
     text-align: center;
