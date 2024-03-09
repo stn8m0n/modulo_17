@@ -44,6 +44,10 @@ header .profile-avatar {
 header span {
   color: red;
 }
+.portifolio {
+  text-align: center;
+  padding-top: 20px;
+}
 .profile-bio {
   text-align: center;
 }
